@@ -1,0 +1,395 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bf-1--: rgb(69, 140, 239);
+  --bf-2--: rgba(56, 114, 196, 0.467);
+  --font-1--: "Poppins", sans-serif;
+  --font-2--: "Poppins", sans-serif;
+  --font-3--: "Share Tech Mono", monospace;
+}
+
+span {
+  color: var(--bf-1--);
+}
+
+body {
+  height: 500vh;
+  background-color: #0d0f12;
+}
+
+/* navbar */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px 24px;
+  align-items: center;
+  font-size: 20px;
+  margin: 8px 40px;
+  position: fixed;
+  border-radius: 24px;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* background-color: var(--bf-2--); */
+  z-index: 9999;
+}
+
+.navbar .kiri img {
+  width: 100px;
+}
+
+.navbar .kiri a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-3--);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-family: var(--font-1--);
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar .kanan button {
+  border: none;
+  font-size: 16px;
+  padding: 12px 20px;
+  background-color: var(--bf-1--);
+  border-radius: 12px;
+  color: white;
+}
+
+/* hoepage */
+
+.homepage {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0px 12px;
+  height: 100vh;
+}
+
+.homepage-text img{
+  width: 50px;
+}
+
+.homepage-text {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  z-index: 2;
+}
+
+.homepage-text h3 {
+  display: flex;
+  font-size: 12px;
+  background-color: var(--bf-1--);
+  padding: 12px 12px;
+  width: 150px;
+  border-radius: 12px;
+  justify-content: center;
+  font-family: var(--font-3--);
+}
+
+.homepage-text h1 {
+  font-size: 32px;
+  font-family: var(--font-1--);
+}
+
+.homepage-text p {
+  font-family: var(--font-2--);
+}
+
+.hompage-img img {
+  width: 400px;
+  margin-top: 100px;
+  transform: rotate(5deg);
+}
+
+.homepage-text button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 14px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid var(--bf-1--);
+  font-weight: bold;
+}
+
+.homepage-text .button-2 {
+  background-color: var(--bf-1--);
+}
+
+/* top crypto */
+
+.title-2 {
+  color: white;
+  text-align: center;
+}
+
+.title-2 h1 {
+  font-family: var(--font-1--);
+}
+
+.title-2 p {
+  font-family: var(--font-3--);
+}
+
+.top-crypto {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.crypto-list {
+  display: flex;
+  flex-direction: row;
+  padding: 32px 40px;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.crypto-list .box {
+  border: 2px solid rgb(69, 140, 239);
+  background-color: var(--bf-2--);
+  padding: 20px 32px;
+  border-radius: 12px;
+  min-width: 250px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+}
+
+.crypto-list .icon-crypto {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.crypto-list img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.crypto-list .crypto-price {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+
+.crypto-list .crypto-price h3 {
+  font-family: var(--font-1--);
+}
+.crypto-list .crypto-price p {
+  font-family: var(--font-2--);
+}
+
+.crypto-list .box:hover{
+  transform: perspective(2000px) rotateX(10deg) rotateY(-10deg);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* market */
+
+.crypto-market {
+  margin-top: 100px;
+}
+
+.market-list {
+  width: 100%;
+}
+
+.market-title,
+.market-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 100px;
+  padding: 12px 32px;
+  color: white;
+  font-family: var(--font-1--);
+  background-color: var(--bf-2--);
+}
+
+.title-3 {
+  text-align: center;
+  margin-bottom: 100px;
+  font-family: var(--font-1--);
+  color: white;
+}
+
+.title-3 p {
+  font-family: var(--font-3--);
+}
+
+/* HEADER TITLE */
+.market-title {
+  font-weight: bold;
+  background: var(--bf-1--);
+  border-radius: 10px 10px 0 0;
+  text-align: left;
+  font-size: 8px;
+}
+
+/* EACH ROW */
+.market-price {
+  border-bottom: 1px solid var(--bf-2--);
+  border-top: 1px solid var(--bf-2--);
+  font-size: 14px;
+}
+
+/* Kolom 1: No */
+.market-price p:nth-child(1),
+.market-title h1:nth-child(1) {
+  width: 40px;
+  text-align: right;
+  margin: 0;
+}
+
+/* Kolom 2: Nama coin */
+.market-price .market-icon,
+.market-title h1:nth-child(2) {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Flex item dalam market-icon */
+.market-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.market-icon img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.market-icon h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.market-icon p {
+  margin: 0;
+  font-size: 12px;
+  color: grey;
+}
+
+/* Kolom 3: Harga */
+.market-price p:nth-child(3),
+.market-title h1:nth-child(3) {
+  width: 160px;
+  text-align: right;
+  margin: 0;
+}
+
+/* Kolom 4: Persentase */
+.market-price p:nth-child(4),
+.market-title h1:nth-child(4) {
+  width: 100px;
+  text-align: right;
+  margin: 0;
+}
+
+/* Kolom 5: capital */
+.market-price p:nth-child(5),
+.market-title h1:nth-child(5) {
+  width: 100px;
+  text-align: center;
+  margin: 0;
+}
+
+/* About */
+.about {
+  display: flex;
+  color: white;
+  margin-top: 100px;
+}
+
+.kiri-about {
+  margin: 12px 100px;
+}
+
+.title-4 {
+  font-size: 24px;
+  font-family: var(--font-1--);
+}
+
+.title-4 p {
+  font-family: var(--font-3--);
+  font-size: 16px;
+}
+
+.kanan-about img {
+  width: 800px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.detail-about {
+  display: flex;
+  flex-direction: row;
+  font-family: var(--font-1--);
+  padding: 32px 0px;
+  gap: 8px;
+}
+
+.detail-about h4 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.detail-about p {
+  font-family: var(--font-3--);
+  font-size: 12px;
+  color: grey;
+}
+
+.detail-about img {
+  width: 50px;
+  border: 2px solid var(--bf-2--);
+  border-radius: 12px;
+}
+
+.about-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 12px;
+}
+.about-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 12px;
+}

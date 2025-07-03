@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/fav-icon.png"
+      style="border-radius: 50%"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>CRYVEX</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="kiri">
+        <a href="#">
+          <img src="assets/crypvex-logo.png" alt="" />
+          <span>Cryvex</span>
+        </a>
+      </div>
+      <div class="tengah">
+        <ul class="nav-menu">
+          <li class="nav-list">
+            <a href="">Market</a>
+          </li>
+          <li class="nav-list">
+            <a href="">Fitur</a>
+          </li>
+          <li class="nav-list">
+            <a href="">Tentang</a>
+          </li>
+          <li class="nav-list">
+            <a href="">Servis</a>
+          </li>
+        </ul>
+      </div>
+      <div class="kanan">
+        <a href="">
+          <button>Log In</button>
+        </a>
+      </div>
+    </nav>
+
+    <section class="homepage">
+      <div class="homepage-text">
+        <h3>Markets For Crypto</h3>
+        <h1>
+          Pantau Pergerakan
+          <span
+            >Crypto <br />
+            dalam Sekejap</span
+          >
+           hanya di <img src="assets/crypvex-logo.png" alt="">Cry<span>vex</span>
+        </h1>
+        <p>Data pasar real-time. Interface cepat. Tanpa batas</p>
+        <a href="">
+          <button>Lihat Market Sekarang</button>
+          <button class="button-2">Investasi Sekarang</button>
+        </a>
+      </div>
+
+      <div class="hompage-img">
+        <img src="assets/mockup-home.png" alt="" class="home-img" />
+      </div>
+    </section>
+
+    <section class="top-crypto">
+      <div class="title-2">
+        <h1>Top 5 Crypto Coins Terupdate</h1>
+        <p>Fitur cryvex menampilkan <span>data crypto terupdate</span></p>
+      </div>
+      <div class="crypto-list" id="crypto-container"></div>
+    </section>
+
+    <section class="crypto-market">
+      <div class="title-3">
+        <h1>Harga Realtime Market Crypto</h1>
+        <p>Menampilkan harga crypto <span>yang ada di market</span></p>
+      </div>
+      <div class="market-list">
+        <div class="market-title">
+          <h1>No</h1>
+          <h1>Nama</h1>
+          <h1>Harga</h1>
+          <h1>Persentase</h1>
+          <h1>Market Cap</h1>
+        </div>
+        <div class="market-price">
+          <p>1</p>
+          <div class="market-icon">
+            <p>BTC</p>
+            <h3>Bitcoin</h3>
+            <img
+              src="https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png?1696501400"
+              alt="Bitcoin"
+              width="20"
+            />
+          </div>
+          <p>Price</p>
+          <p>Persentase</p>
+          <p>capital</p>
+        </div>
+        <div class="market-price">
+          <p>1</p>
+          <div class="market-icon">
+            <p>ETH</p>
+            <h3>Ethereum</h3>
+            <img
+              src="https://coin-images.coingecko.com/coins/images/279/large/ethereum.png?1696501628"
+              alt="Ethereum"
+              width="20"
+            />
+          </div>
+          <p>Price</p>
+          <p>Persentase</p>
+          <p>capital</p>
+        </div>
+        <div class="market-price">
+          <p>3</p>
+          <div class="market-icon">
+            <p>USDT</p>
+            <h3>Tether</h3>
+            <img
+              src="https://coin-images.coingecko.com/coins/images/325/large/Tether.png?1696501661"
+              alt="Tether"
+              width="20"
+            />
+          </div>
+          <p>Price</p>
+          <p>Persentase</p>
+          <p>capital</p>
+        </div>
+        <div class="market-price">
+          <p>4</p>
+          <div class="market-icon">
+            <p>XRP</p>
+            <h3>XRP</h3>
+            <img
+              src="https://coin-images.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png?1696501442"
+              alt="XRP"
+              width="20"
+            />
+          </div>
+          <p>Price</p>
+          <p>Persentase</p>
+          <p>capital</p>
+        </div>
+        <div class="market-price">
+          <p>5</p>
+          <div class="market-icon">
+            <p>BNB</p>
+            <h3>Binance</h3>
+            <img
+              src="https://coin-images.coingecko.com/coins/images/825/large/bnb-icon2_2x.png?1696501970"
+              alt="BNB"
+              width="20"
+            />
+          </div>
+          <p>Price</p>
+          <p>Persentase</p>
+          <p>capital</p>
+        </div>
+        <div class="market-price">
+          <p>6</p>
+          <div class="market-icon">
+            <p>SOL</p>
+            <h3>Solana</h3>
+            <img
+              src="https://coin-images.coingecko.com/coins/images/4128/large/solana.png?1718769756"
+              alt="Solana"
+              width="20"
+            />
+          </div>
+          <p>Price</p>
+          <p>Persentase</p>
+          <p>capital</p>
+        </div>
+        <div class="market-price">
+          <p>7</p>
+          <div class="market-icon">
+            <p>USDC</p>
+            <h3>USDC</h3>
+            <img
+              src="https://coin-images.coingecko.com/coins/images/6319/large/usdc.png?1696506694"
+              alt="USDC"
+              width="20"
+            />
+          </div>
+          <p>Price</p>
+          <p>Persentase</p>
+          <p>capital</p>
+        </div>
+        <div class="market-price">
+          <p>8</p>
+          <div class="market-icon">
+            <p>TRX</p>
+            <h3>TRON</h3>
+            <img
+              src="https://coin-images.coingecko.com/coins/images/1094/large/tron-logo.png?1696502193"
+              alt="TRON"
+              width="20"
+            />
+          </div>
+          <p>Price</p>
+          <p>Persentase</p>
+          <p>capital</p>
+        </div>
+        <div class="market-price">
+          <p>9</p>
+          <div class="market-icon">
+            <p>DOGE</p>
+            <h3>Dogecoin</h3>
+            <img
+              src="https://coin-images.coingecko.com/coins/images/5/large/dogecoin.png?1696501409"
+              alt="Dogecoin"
+              width="20"
+            />
+          </div>
+          <p>Price</p>
+          <p>Persentase</p>
+          <p>capital</p>
+        </div>
+        <div class="market-price">
+          <p>10</p>
+          <div class="market-icon">
+            <p>HYPE</p>
+            <h3>Hyperliquid</h3>
+            <img
+              src="https://coin-images.coingecko.com/coins/images/50882/large/hyperliquid.jpg?1729431300"
+              alt="Hyperliquid"
+              width="20"
+            />
+          </div>
+          <p>Price</p>
+          <p>Persentase</p>
+          <p>capital</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="kiri-about">
+        <div class="title-4">
+          <h1>Kenapa harus <span>Cryvex</span></h1>
+          <p>
+            <span>CRYVEX</span> hadir untuk memudahkan Anda menjelajah dunia
+            kripto dengan percaya diri.
+          </p>
+        </div>
+        <div class="detail-about">
+          <div class="about-1">
+            <img src="assets/icon-1.png" alt="" />
+            <h4>Strong Security</h4>
+            <p>
+              Teknologi enkripsi tingkat tinggi untuk menjaga keamanan data dan
+              asetmu.
+            </p>
+            <img src="assets/icon-2.png" alt="" />
+            <h4>Valu Performance</h4>
+            <p>
+              Pantau pertumbuhan dan perubahan harga aset crypto secara
+              real-time dan akurat.
+            </p>
+          </div>
+          <div class="about-2">
+            <img src="assets/icon-3.png" alt="" />
+            <h4>Payment Options</h4>
+            <p>
+              Dukungan berbagai sistem pembayaran untuk kenyamanan transaksi
+              Anda.
+            </p>
+            <img src="assets/icon-4.png" alt="" />
+            <h4>Transparent</h4>
+            <p>
+              Seluruh aktivitas dan aset ditampilkan terbuka untuk kepercayaan
+              maksimal.
+            </p>
+          </div>
+          <div class="about-2"></div>
+        </div>
+      </div>
+      <div class="kanan-about">
+        <img src="assets/mockup-3.png" alt="" />
+      </div>
+    </section>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>
